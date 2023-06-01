@@ -6,11 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css" type="text/css">
   <script src="script.js" type="text/javascript" defer></script>
-  <title>Document</title>
+  <title>Dynamiser un Site Web</title>
 </head>
 <body>
-  <header>
-    <h1>Jouons au dés</h1>
-  </header>
+  <div class="container">
+    <header>
+      <h1><span>&plus;</span> New game</h1>
+    </header>
+    <main>
+      <div>
+        <h2>Player 1 <span>.</span></h2>
+        <div class="score" id="cumulated-player-1">43</div>
+      </div>
+      <div>
+        <div class="dice" id="dice-js"></div>
+      </div>
+      <div>
+        <h2>Player 2 <span>.</span></h2>
+        <div class="score" id="cumulated-player-2">72</div>
+      </div>
+    </main>
+    <footer>
+      <div id="current-player-1">11</div>
+      <div class="dice-trigger">
+        <div id="roll-dice">Roll dice</div>
+        <div id="hold">Hold</div>
+      </div>
+      <div id="current-player-2">0</div>
+    </footer>
+  </div>
 </body>
 </html>
